@@ -107,7 +107,21 @@
         /* CSS GRID */
         display: grid;
         grid-template-columns: 125px 200px 125px;
-        grid-template-rows: 250px 101px;
+        grid-template-rows: 250px 100px;
+
+        /* Aligning tracks inside container: distribute empty space  */
+        justify-content: center;
+        /* justify-content: space-between; */
+        /* align-content: center; */
+        gap: 50px;
+        align-content: center;
+        /* Aligning items INSIDE cells: moving items around inside the cells */
+        align-items: center;
+        justify-items: center;
+      }
+      .el--13 {
+        align-self: end;
+        justify-self: end;
       }
     </style>
   </head>
